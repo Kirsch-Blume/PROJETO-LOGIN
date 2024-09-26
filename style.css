@@ -13,7 +13,7 @@ body {
 #login-form {
   background-color: blue;
   border-radius: 10px;
-  background-color: rgb(200, 180, 90);
+  background-color: rgb(204, 204, 204);
   display: flex;
   flex-direction: column;
   align-items: center;

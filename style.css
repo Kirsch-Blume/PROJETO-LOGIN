@@ -13,7 +13,7 @@ body {
 #login-form {
   background-color: blue;
   border-radius: 10px;
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(185, 185, 185);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,10 +23,10 @@ body {
   padding: 20px;
   border: 1px solid black;
 }
-#login-form *{
-    padding: 10px;
-    width: 100%;
+#login-form * {
+  padding: 10px;
+  width: 100%;
 }
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }

@@ -9,24 +9,88 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.2s all;
 }
+body.dark {
+  background: #181818;
+}
+
 #login-form {
   background-color: blue;
   border-radius: 10px;
-  background-color: rgb(185, 185, 185);
+  background-color: rgb(230, 230, 230);
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   justify-content: center;
   min-height: 300px;
-  gap: 20px;
+  gap: 10px;
   padding: 20px;
   border: 1px solid black;
+  width: 300px;
+  position:relative;
 }
 #login-form * {
   padding: 10px;
-  width: 100%;
+
+  outline: none;
 }
 h1 {
   text-align: center;
 }
+button,
+#usuario,
+#senha {
+  width: 100%;
+}
+
+#mensagem {
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s all;
+}
+
+.sucesso {
+  background-color: green;
+  display: flex !important;
+}
+
+.erro {
+  background-color: red;
+  display: flex !important;
+}
+.mostrarsenha label {
+  cursor: pointer;
+}
+.mostrarsenha {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 !important;
+  gap: 3px;
+  padding: 0px 0px 0px 4px !important;
+}
+#mostrar-senha {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+#login-form.dark {
+  background: #414141;
+  color: rgb(255, 255, 255);
+}
+
+#dark-mode {
+ user-select: none;
+  position: absolute;
+  top:0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#dark-mode:hover{transform: scale(1.2)}

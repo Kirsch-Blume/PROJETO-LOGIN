@@ -8,10 +8,30 @@
   </head>
   <body>
     <div class="container">
-      <form id="login-form">
+      
+      <form id="login-form"><span id="dark-mode">🌙</span>
         <h1>Login</h1>
-        <input type="text"  id="usuario" placeholder="Digite seu nome" autocomplete="off" required/>
-        <input type="password" id="senha" placeholder="Digite sua senha" autocomplete="off" required/>
+        <span id="mensagem"> </span>
+        <input
+          type="text"
+          id="usuario"
+          placeholder="Digite seu nome"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="password"
+          id="senha"
+          placeholder="Digite sua senha"
+          autocomplete="off"
+          required
+        />
+        <div class="mostrarsenha">
+
+          <input type="checkbox" name="" id="mostrar-senha" />
+
+          <label for="mostrar-senha">Mostrar senha</label>
+        </div>
         <button type="submit">Acessar</button>
       </form>
     </div>
